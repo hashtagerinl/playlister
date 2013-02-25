@@ -89,15 +89,15 @@ test 'An artist can count how many songs they have' do
 
   assert_equal artist.songs_count, 2
 end
-
+### What is up w/ this??? ###
 test 'a song can be added to an artist' do
   artist = Artist.new
-  song = Song.new
+  song = Song.new  
   artist.add_song(song)
 
   assert artist.songs.include?(song)
 end
-
+### What is up w/ this??? ###
 test 'artists have genres' do
   artist = Artist.new
   song = Song.new
